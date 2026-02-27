@@ -46,20 +46,20 @@ const promise5 = (data) => {
 function calculation(){
 	promise1()
 		.then((res) => {
-		output.textContent = res;
+		output.textContent = `Result: ${res}`;
 		return promise2(res);
 	}).then((res) =>{
-		output.textContent = res;
+		output.textContent = `Result: ${res}`;
 		return promise3(res);
 	}).then((res) =>{
-		output.textContent = res;
+		output.textContent = `Result: ${res}`;
 		return promise4(res);
 	}).then((res) => {
-		  output.textContent = res;
+		  output.textContent = `Result: ${res}`;
 			return promise5(res);
 			
 	}).then((res) =>{
-    output.textContent = res;
+    output.textContent = `Final Result: ${res}`;
 });
 	
 }
